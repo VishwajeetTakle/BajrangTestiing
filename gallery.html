@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jai Bajrang Motor Driving | Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-auto-rows: 250px;
+        grid-auto-flow: dense;
+      }
+      .gallery-item.wide {
+        grid-column: span 2;
+      }
+      .gallery-item.tall {
+        grid-row: span 2;
+      }
+      .gallery-item.big {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    </style>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <!-- Header section start -->
+    <header class="w-full top-0 z-50 shadow-lg">
+      <!-- Top Tier (High-contrast Vibrant Red) -->
+      <div class="bg-secondary text-white py-2.5">
+        <div
+          class="max-w-container-max mx-auto px-gutter flex justify-between items-center"
+        >
+          <div class="flex items-center gap-6">
+            <div class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-[20px] text-yellow-400"
+                >schedule</span
+              >
+              <span class="text-sm font-semibold tracking-wide"
+                >Mon - Sat: 08.00 AM - 09.00 PM</span
+              >
+            </div>
+            <div class="hidden sm:flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px] text-white/90"
+                >call</span
+              >
+              <span class="text-sm font-semibold tracking-wide"
+                ><a href="tel:0240-2451010" class="hover:text-primary"
+                  >0240-2451010</a
+                ></span
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-6">
+            <div class="flex items-center gap-4">
+              <a
+                class="hover:scale-110 transition-transform duration-200 bg-white/10 p-1 rounded-sm"
+                href="https://wa.me/message/PB4ZGQDD34LAD1"
+                target="_blank"
+              >
+                <img alt="WhatsApp" class="w-8" src="Icons/whatsapp.png" />
+              </a>
+              <a
+                class="hover:scale-110 transition-transform duration-200 bg-white/10 p-1 rounded-sm"
+                href="https://www.instagram.com/_bajrang_motor_driving_school_?igsh=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+              >
+                <img alt="Instagram" class="w-8" src="Icons/instagram.png" />
+              </a>
+              <a
+                class="hover:scale-110 transition-transform duration-200 bg-white/10 p-1 rounded-sm"
+                href="https://www.facebook.com/profile.php?id=100064113516939&mibextid=LQQJ4d"
+                target="_blank"
+              >
+                <img alt="Facebook" class="w-8" src="Icons/facebook.png" />
+              </a>
+            </div>
+            <div class="h-4 w-[1px] bg-white/30 hidden sm:block"></div>
+            <a
+              class="text-sm font-bold tracking-widest hover:text-yellow-400 transition-colors uppercase border-b border-transparent hover:border-yellow-400"
+              href="studyMaterial.html"
+              >Exam Related</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Tier -->
+      <div class="bg-brand-light-blue py-3">
+        <div
+          class="max-w-container-max mx-auto px-gutter flex justify-between items-center"
+        >
+          <div class="flex items-center">
+            <a
+              class="block transition-transform hover:scale-105 duration-300"
+              href="#"
+            >
+              <img
+                alt="Jai Bajrang Logo"
+                class="w-25 object-contain"
+                src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311738/Logo_iwvyze.png"
+              />
+            </a>
+          </div>
+          <nav class="hidden lg:flex items-center gap-10">
+            <a
+              class="nav-link font-bold text-primary tracking-tight"
+              href="index.html#hero-section.html"
+              >Home</a
+            >
+            <a
+              class="nav-link font-bold text-primary tracking-tight"
+              href="index.html#about-section"
+              >About Us</a
+            >
+            <a
+              class="nav-link font-bold text-primary tracking-tight"
+              href="index.html#branch-section"
+              >Our Branches</a
+            >
+            <a
+              class="nav-link font-bold text-primary tracking-tight"
+              href="index.html#courses-section"
+              >Courses & Services</a
+            >
+            <a
+              class="nav-link font-bold text-primary tracking-tight"
+              href="index.html#cars-section"
+              >Training Cars</a
+            >
+          </nav>
+          <div class="flex items-center text-center">
+            <a
+              href="admissionProcess.html"
+              class="bg-white text-primary px-8 py-3 rounded-full font-bold uppercase text-xs tracking-wider shadow-md hover:bg-primary hover:text-white hover:shadow-lg transition-all duration-300 active:scale-95"
+            >
+              Admission <br />
+              Process
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header section end -->
+
+    <main>
+      <!-- Hero section start-->
+      <section
+        class="bg-primary-container py-xl px-gutter relative overflow-hidden"
+      >
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <div
+            class="w-full h-full bg-radial from-white via-transparent to-transparent"
+          ></div>
+        </div>
+        <div class="max-w-container-max mx-auto text-center relative z-10">
+          <div
+            class="font-h1 text-h1 text-on-primary-container mb-md hover:text-white"
+          >
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors text-4xl"
+              style="
+                font-variation-settings:
+                  &quot;FILL&quot; 0,
+                  &quot;wght&quot; 700,
+                  &quot;GRAD&quot; 0,
+                  &quot;opsz&quot; 48;
+              "
+              ><a href="index.html#hero-section">arrow_back</a></span
+            >
+            Our Gallery
+          </div>
+        </div>
+      </section>
+      <!-- Hero section end -->
+
+      <!-- Gallery Section Start -->
+      <section class="py-xl px-gutter max-w-container-max mx-auto">
+        <div class="gallery-grid gap-sm">
+          <!-- Gallery Items -->
+          <!-- 1 -->
+          <div
+            class="gallery-item big relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311743/marathwada_qczang.jpg"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311746/simulator-session_qk6xj4.webp"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div
+            class="gallery-item tall relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/v1778311744/politician1_jouijs.jpg"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311744/politician2_yqrjxj.jpg"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div
+            class="gallery-item wide relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311727/cover_ixnvjg.jpg"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311724/eight_fgpyq3.png"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311745/rules_xlwn66.webp"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311737/lecture1_f0adfy.jpg"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div
+            class="gallery-item tall relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311726/article_a2cuhw.jpg"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"></span>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311751/signs_fssbho.jpg"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"> </span>
+            </div>
+          </div>
+          <!-- 11 -->
+          <!-- <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Close-up of a road map and GPS device being used during a navigation lesson inside a car cockpit."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB00Ix_BZOU0No3G1zNr3tA9YoxIjpbXGAxjjL9A7VrCpYCdLefq21ekrL4aRJCqvIVkp0AjlFVMaky6X87J3yYKJo6eYDSQH_zsLK80otqTe22uQ0l7HdY2MRF5FsjWKVUP9d4T4Iy1jnhgTuo3-BQV3YRyOlRmAVqGrNV9mtxKkAz2nGVVs-dFjUm-xZiVohm5-pRlW6oEoAc6HTfP9SLamRgpkYwKyS27NZeVrGMq7vGG6ufxI-3NCtBV0rvN_2e2OVZBA8Dcg"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Route Planning</span
+              >
+            </div>
+          </div> -->
+          <!-- 12 -->
+          <!-- <div
+            class="gallery-item wide relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="A group photo of the professional instructors team wearing corporate navy blue uniforms with red school logos."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeKEcCMhYGNQL4LJjWmTj4Fv1rvNtat8Ak1_fzaV4YVFcA20NZsC6cvq8kNEcgwKAF_BHJNRp7_etTEpaAQaNitx7X1grHfzEXP32pU-_i-7ZB2Yx4gAqA7-EMFlf_tBOsaaXa7kJl0LfaVSrerVpVBMsZaTX5ZUNCk3Ohyizb4QjctGlAjjn3SkXgED_GPZ_aH9wVjIBAnV44AxO4uMOFNsFpwxcUMvk1WyFLmVIJZ0y3EbeGeCx1oJIcVMok6ijWOaSws3L2xQ"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Our Certified Experts</span
+              >
+            </div>
+          </div> -->
+          <!-- 13 -->
+          <!-- <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Engine bay inspection lesson. Student and instructor looking at a modern car engine for basic maintenance knowledge."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJwoFGztDV2vAq9eXSN86IW2vKh1s4SOiTWUXTVXjVbA-JYm-iWZlQt6JE_24u52EDz915pM-Cx5Bu4QX9Sz0WcHZxYxWzgr_I2m5aRtVtHy3rhnXyxaNK6jeg106mzuKBOK6yXpHi-6n8KGPmaPuNy3oJhTLjJFhftNPaI0kEMeSTLbgK0sWFfiRveVi5InCRChHbD1-5dUAjx84869_EHm4XFA13lyzlwFUSpmmqEMkHoHXgAa_i6UHkJrN8KG1lpztvJ5E8IQ"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Technical Workshops</span
+              >
+            </div>
+          </div> -->
+          <!-- 14 -->
+          <!-- <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Aerial view of a training car performing a perfect parallel park between markers on a practice ground."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMfepufFyrdnpTz9SmVLils4jkcfggy9qKP35kBvPvOCn_LWQ5871mX3z5c_5Iz-gdva9UYX9JpIdv4eVRCBb6rXLubFPxa84sLdceh9T4c7zZJdJP-fXmsSDAogorTeGOLWce0xDseSIOOIOXIkU-iQgQ4La4hBb0ngT3H4XrK0c1aMev3O-qtKRlIiq1xExfjNEJjFQeagbCOzT94igvJK44xvC0ZuXVQ5p64QFEfkMvwE6vMtmT3G_Izbjlh2MQOmvwsXBK8w"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Parking Mastery</span
+              >
+            </div>
+          </div> -->
+          <!-- 15 -->
+          <!-- <div
+            class="gallery-item tall relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Scenic drive during an highway driving lesson with mountain views in the background. Bright summer light."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_oE6RvJh2IFNcW7eS6PbfrsC6wRdxZfOJWvqtF0Vws_JK9gLCuxUTOvqStNVxZvToJ-2fcqJL7-jDLvX6s-Zms4rXTsvv9VOFoe-cAR-qyIUMDEAlx1_0VaES8tU1QyaGhU1V2F6cKxijTZ8ye1Z1lxxHDjCq-vM8wa2yEAqQEYorYpul_xzZDE9SfOhk_1E8IOvhSBy7wPQy2HG3_kKzGE4JIZCcp6X4K0Lnyy39Mw6B9Xa0dfIDYtdLaCytFUo7ShEGjUEtKg"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Highway Confidence</span
+              >
+            </div>
+          </div> -->
+          <!-- 16 -->
+          <!-- <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Instructor providing feedback to a student while holding a tablet showing driving performance data."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTrn4WgWMZbYHEQ6s6wAKSf8HL_sEuk0nAbfAzTXPdnCRbt9E8aGCvqM_5gjpmCHzN2xQXxkwHbZ8kV6TR9SZn8CnEnOlHS96MUdoA1g2M90EclzW-n5qRSMT5EL34qdD7PFtHUqMIN-rCm4LUiDNWGJFN9kU1wBi2cUQkpfRUXTHZFeNuevGfUheZ-1SMwX_ccLigOCQWdBJsmmVr6TjdkWsCrY9LER_xF-579b-jeIwRa-W2l_LOofHK7QiI4zkbYMrhlTdeQw"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Data-Driven Progress</span
+              >
+            </div>
+          </div> -->
+          <!-- 17 -->
+          <!-- <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Students using desktop computers at the driving school's digital theory test center."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA72MytdB2oABulLn0wggO_hsux3nCiDFIpfEZYIxjnbgvnQwTPKx9M0oHYbMjbUwlXpAll8NDO47dppRQlwOxY7OoDgAClpBMYJN2vpEaTycuZus2NZGh2q67NYRXwDViZYP4QxyuvBSF0xaUNu78rzLFR90w-hFeAe6ooeYPrBr005nv5PO85fIWoz75hGm9SBkDYj6ojytSbGr-pARNNbuinPh12ngriEXDU3Q2kO01Zo9lwIhk_QM0bvwQaFxHddSW03pFw0w"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Theory Test Center</span
+              >
+            </div>
+          </div> -->
+          <!-- 18 -->
+          <!-- <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Close up of a manual gear shifter being operated correctly during a shift maneuver."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfDqbzDzZKxUxuApceSYQL7ADS_Bd_EICX38Ec8bddi8GzsrREJUsNEtXioFXhqgqg1TZhrn-s8b122mtDhsH9jBCaCGQc_mNV7SThbvUl8XrMnj5Ij-cRMU80xS3ODALw6OP52co_xShveeaYrfZiTac3yRWdEKh3i9N2F8R3ANB2PQT3z-bi9ZA0C4oTyWOeynZdaRKIG9GA55HkcfzfEsJVxlYywfAezslcRDzk8m8wJzu-lEdT9RU67RyZFm7tFTOIB89K0w"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Manual Gear Control</span
+              >
+            </div>
+          </div> -->
+          <!-- 19 -->
+          <!-- <div
+            class="gallery-item wide relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Driving school car navigating a rainy street safely, emphasizing weather condition training."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3o_YYguMLO_iNeDgXUHxaaWGXEBSxsFTay962yT7yZq-fh-tlOo8a__TEz2RAwWjWDpMfs3o3fc1rxNBwyro4_R8yM2clMfS4kjD7oXswbNUpl4WdsBYHywLAGCBOUHL86b02a_uR3cDAcZGVBd8SLKzPtmslhyJV1V8JdgZZg_4PphmyqKAfaARpPhirhjljTr2VpK_-GGTGCV-GBjpfoHQ1XpSBKnEiaAbMCoX_WtGDAy4Ml2U0yrBkZyHEAYitpEHFTrbXNA"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Weather Response Training</span
+              >
+            </div>
+          </div> -->
+          <!-- 20 -->
+          <!-- <div
+            class="gallery-item relative group cursor-pointer overflow-hidden rounded shadow-sm border border-outline-variant"
+          >
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              data-alt="Student and instructor sharing a high-five after a successful mock driving test."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJQioTNd-NLVq4C0zNkAgre-iqXJcYr7XbLLChIzT30uL_tuhmuw5gfXmXpWxkHRr9c_pPyB1MTGzg1OQ7G5QJTukYWtSAcIORmchks9aXdbhIUhcKkdyKV4quYM0n1Sp4948ErUSZOBjr3Ummym4BmBOaVMo5opsvpizs-qx3F43F45zcBD7_rT-gnKm3NeHrKBDPRCYfGc9KFm4X7rKGHNimYQTcgy2iA2NJBXvvgC6UzQRzo2kFo1v1mgnvoBOTEgc3O--ZtA"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+            >
+              <span class="text-on-primary font-label-bold"
+                >Confidence Building</span
+              >
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!-- Gallery Section End -->
+    </main>
+
+    <!-- Footer Section Start -->
+    <footer
+      class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container full-width border-t border-outline-variant dark:border-outline"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-lg w-full px-gutter py-xl max-w-container-max mx-auto"
+      >
+        <div>
+          <div class="flex items-center gap-sm mb-md">
+            <img
+              alt="Logo"
+              class="w-[100px]"
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311738/Logo_iwvyze.png"
+            />
+            <div
+              class="font-h3 text-h3 font-bold text-on-primary dark:text-on-primary-container leading-none"
+            >
+              Jai Bajrang <br />
+              Motor Driving School
+            </div>
+          </div>
+          <p class="opacity-80 font-body-md text-body-md mb-md">
+            Providing safe and expert driving training since 2014. Your partner
+            in professional road safety.
+          </p>
+          <div class="flex gap-sm">
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors"
+              >social_leaderboard</span
+            >
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors"
+              >alternate_email</span
+            >
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors"
+              >call</span
+            >
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-md">
+          <div class="flex flex-col gap-sm">
+            <span class="font-label-bold text-secondary-fixed mb-base uppercase"
+              >Quick Links</span
+            >
+            <a
+              class="font-body-md text-body-md text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-all"
+              href="#"
+              >About Us</a
+            >
+            <a
+              class="font-body-md text-body-md text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-all"
+              href="#"
+              >Our Branches</a
+            >
+            <a
+              class="font-body-md text-body-md text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-all"
+              href="#"
+              >Driving Courses</a
+            >
+          </div>
+          <div class="flex flex-col gap-sm">
+            <span class="font-label-bold text-secondary-fixed mb-base uppercase"
+              >Legal</span
+            >
+            <a
+              class="font-body-md text-body-md text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-all"
+              href="#"
+              >Privacy Policy</a
+            >
+            <a
+              class="font-body-md text-body-md text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-all"
+              href="#"
+              >Safety Tips</a
+            >
+            <a
+              class="font-body-md text-body-md text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim transition-all"
+              href="#contact"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <div>
+          <!-- <span
+            class="font-label-bold text-secondary-fixed mb-md block uppercase"
+            >Newsletter</span
+          >
+          <p class="text-body-md opacity-80 mb-md">
+            Subscribe for the latest safety tips.
+          </p>
+          <div class="flex">
+            <input
+              class="bg-primary-container border-outline text-white px-md py-sm rounded-l focus:ring-secondary focus:border-secondary w-full"
+              placeholder="Email Address"
+              type="email"
+            />
+            <button
+              class="bg-secondary text-on-secondary px-md rounded-r hover:brightness-110"
+            >
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </div> -->
+          <img
+            src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311727/card_xxxxcf.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+      </div>
+      <div
+        class="w-full border-t border-white/10 py-md text-center opacity-60 font-body-md text-body-md"
+      >
+        © 2026 Jai Bajrang Motor Driving School. All rights reserved.
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <div
+      class="fixed inset-0 z-[100] bg-black/95 hidden flex flex-col items-center justify-center p-md select-none"
+      id="lightbox"
+    >
+      <button
+        class="absolute top-md right-md text-on-primary p-2 hover:bg-white/10 rounded-full transition-colors z-[110]"
+        id="close-lightbox"
+      >
+        <span class="material-symbols-outlined scale-150">close</span>
+      </button>
+      <button
+        class="absolute left-md top-1/2 -translate-y-1/2 text-on-primary p-4 hover:bg-white/10 rounded-full transition-colors z-[110]"
+        id="prev-btn"
+      >
+        <span class="material-symbols-outlined scale-[2.5]">chevron_left</span>
+      </button>
+      <div class="relative w-full max-w-5xl flex flex-col items-center">
+        <div class="overflow-hidden flex items-center justify-center">
+          <img
+            alt="Full size preview"
+            class="max-h-[80vh] w-auto shadow-2xl border-2 border-outline-variant object-contain"
+            id="lightbox-img"
+            src=""
+          />
+        </div>
+        <div
+          class="bg-black/50 backdrop-blur-sm p-md mt-md rounded w-full max-w-3xl text-center"
+        >
+          <p class="text-on-primary font-h3 mb-xs" id="lightbox-caption"></p>
+          <p
+            class="text-on-primary/60 text-sm font-label-bold"
+            id="lightbox-index"
+          ></p>
+        </div>
+      </div>
+      <button
+        class="absolute right-md top-1/2 -translate-y-1/2 text-on-primary p-4 hover:bg-white/10 rounded-full transition-colors z-[110]"
+        id="next-btn"
+      >
+        <span class="material-symbols-outlined scale-[2.5]">chevron_right</span>
+      </button>
+    </div>
+
+    <script>
+      const galleryItems = Array.from(
+        document.querySelectorAll(".gallery-item"),
+      );
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
+      const lightboxIndex = document.getElementById("lightbox-index");
+      const closeBtn = document.getElementById("close-lightbox");
+      const prevBtn = document.getElementById("prev-btn");
+      const nextBtn = document.getElementById("next-btn");
+
+      let currentIndex = 0;
+
+      const updateLightbox = (index) => {
+        currentIndex = index;
+        const item = galleryItems[currentIndex];
+        const img = item.querySelector("img");
+        const caption = item.querySelector("span").innerText;
+
+        lightboxImg.src = img.src;
+        lightboxCaption.innerText = caption;
+        lightboxIndex.innerText = `Image ${currentIndex + 1} of ${galleryItems.length}`;
+      };
+
+      const openLightbox = (index) => {
+        updateLightbox(index);
+        lightbox.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.add("hidden");
+        document.body.style.overflow = "";
+      };
+
+      const nextImage = (e) => {
+        if (e) e.stopPropagation();
+        const nextIdx = (currentIndex + 1) % galleryItems.length;
+        updateLightbox(nextIdx);
+      };
+
+      const prevImage = (e) => {
+        if (e) e.stopPropagation();
+        const prevIdx =
+          (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        updateLightbox(prevIdx);
+      };
+
+      galleryItems.forEach((item, index) => {
+        item.addEventListener("click", () => openLightbox(index));
+      });
+
+      closeBtn.addEventListener("click", closeLightbox);
+      nextBtn.addEventListener("click", nextImage);
+      prevBtn.addEventListener("click", prevImage);
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        if (lightbox.classList.contains("hidden")) return;
+
+        if (e.key === "ArrowRight") nextImage();
+        if (e.key === "ArrowLeft") prevImage();
+        if (e.key === "Escape") closeLightbox();
+      });
+
+      // Close on backdrop click
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+    </script>
+  </body>
+</html>
