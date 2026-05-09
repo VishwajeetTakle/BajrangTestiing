@@ -1,14 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
-<html lang="en">
-  <head>
+  <!-- <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jai Bajrang Motor Driving | Gallery</title>
@@ -46,6 +38,86 @@
       }
     </style>
     <link rel="stylesheet" href="./src/output.css" />
+  </head> -->
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery | Jai Bajrang Motor Driving School</title>
+
+    <meta
+      name="description"
+      content="Explore the gallery of Jai Bajrang Motor Driving School featuring training sessions, instructors, vehicles, and student activities."
+    />
+
+    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="icon" type="image/png" href="./Icons/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+
+        vertical-align: middle;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+        grid-auto-rows: 250px;
+        grid-auto-flow: dense;
+      }
+
+      .gallery-item.wide {
+        grid-column: span 2;
+      }
+
+      .gallery-item.tall {
+        grid-row: span 2;
+      }
+
+      .gallery-item.big {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      @media (max-width: 768px) {
+        .gallery-item.wide,
+        .gallery-item.big {
+          grid-column: span 1;
+        }
+
+        .gallery-item.tall,
+        .gallery-item.big {
+          grid-row: span 1;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Header section start -->
@@ -122,14 +194,14 @@
               <img
                 alt="Jai Bajrang Logo"
                 class="w-25 object-contain"
-                src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311738/Logo_iwvyze.png"
+                src="./Icons/Logo.png"
               />
             </a>
           </div>
           <nav class="hidden lg:flex items-center gap-10">
             <a
               class="nav-link font-bold text-primary tracking-tight"
-              href="index.html#hero-section.html"
+              href="index.html#hero-section"
               >Home</a
             >
             <a
@@ -181,17 +253,23 @@
           <div
             class="font-h1 text-h1 text-on-primary-container mb-md hover:text-white"
           >
-            <span
-              class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors text-4xl"
-              style="
-                font-variation-settings:
-                  &quot;FILL&quot; 0,
-                  &quot;wght&quot; 700,
-                  &quot;GRAD&quot; 0,
-                  &quot;opsz&quot; 48;
-              "
-              ><a href="index.html#hero-section">arrow_back</a></span
+            <a
+              href="index.html#hero-section"
+              class="inline-flex items-center justify-center hover:text-secondary-fixed transition-colors"
             >
+              <span
+                class="material-symbols-outlined text-4xl"
+                style="
+                  font-variation-settings:
+                    &quot;FILL&quot; 0,
+                    &quot;wght&quot; 700,
+                    &quot;GRAD&quot; 0,
+                    &quot;opsz&quot; 48;
+                "
+              >
+                arrow_back
+              </span>
+            </a>
             Our Gallery
           </div>
         </div>
@@ -212,7 +290,7 @@
               loading="lazy"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
             >
               <span class="text-on-primary font-label-bold"></span>
             </div>
@@ -257,7 +335,7 @@
               loading="lazy"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
             >
               <span class="text-on-primary font-label-bold"></span>
             </div>
@@ -272,7 +350,7 @@
               loading="lazy"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
             >
               <span class="text-on-primary font-label-bold"></span>
             </div>
@@ -287,7 +365,7 @@
               loading="lazy"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
             >
               <span class="text-on-primary font-label-bold"></span>
             </div>
@@ -302,7 +380,7 @@
               loading="lazy"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
             >
               <span class="text-on-primary font-label-bold"></span>
             </div>
@@ -317,7 +395,7 @@
               loading="lazy"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
             >
               <span class="text-on-primary font-label-bold"></span>
             </div>
@@ -332,7 +410,7 @@
               loading="lazy"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
             >
               <span class="text-on-primary font-label-bold"></span>
             </div>
@@ -347,7 +425,7 @@
               loading="lazy"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md"
             >
               <span class="text-on-primary font-label-bold"> </span>
             </div>
@@ -536,11 +614,7 @@
       >
         <div>
           <div class="flex items-center gap-sm mb-md">
-            <img
-              alt="Logo"
-              class="w-[100px]"
-              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311738/Logo_iwvyze.png"
-            />
+            <img alt="Logo" class="w-[100px]" src="./Icons/Logo.png" />
             <div
               class="font-h3 text-h3 font-bold text-on-primary dark:text-on-primary-container leading-none"
             >

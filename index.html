@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <!-- <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -16,8 +16,61 @@
       Sambhajinagar|Best motor driving school Aurangabad
     </title>
     <link href="./src/output.css" rel="stylesheet" />
-  </head>
+  </head> -->
+  <head>
+    <meta charset="UTF-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Government recognized driving school in Chhatrapati Sambhajinagar offering professional driving lessons, license assistance, and safe driving training."
+    />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Main Font -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+
+    <!-- Material Icons Optimized -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap"
+      />
+
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      />
+    </noscript>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- Optional: Improve Theme Color on Mobile -->
+    <meta name="theme-color" content="#ffffff" />
+  </head>
   <body
     class="bg-background text-on-surface text-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed"
   >
@@ -26,7 +79,7 @@
 
     <!-- Floating Language Toggle -->
     <div
-      class="fixed bottom-5 right-5 z-[9999] flex gap-2.5 bg-white p-2.5 rounded-full shadow-lg"
+      class="fixed bottom-5 right-5 z-9999 flex gap-2.5 bg-white p-2.5 rounded-full shadow-lg"
     >
       <button
         onclick="changeLanguage('en')"
@@ -117,7 +170,7 @@
               <img
                 alt="Jai Bajrang Logo"
                 class="w-25 object-contain"
-                src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311738/Logo_iwvyze.png"
+                src="./Icons/Logo.png"
               />
             </a>
           </div>
@@ -175,10 +228,16 @@
         <div class="absolute inset-0 z-0">
           <div
             class="w-full h-full bg-cover bg-center opacity-60 mix-blend-overlay"
-            style="
-              background-image: url(&quot;https://res.cloudinary.com/dybeyyiam/image/upload/v1778311727/cover_ixnvjg.jpg&quot;);
-            "
-          ></div>
+          >
+            <img
+              src="https://res.cloudinary.com/dybeyyiam/image/upload/v1778311727/cover_ixnvjg.jpg"
+              fetchpriority="high"
+              loading="eager"
+              decoding="async"
+              class="absolute inset-0 w-full h-full object-cover"
+              alt=""
+            />
+          </div>
           <div
             class="absolute inset-0 bg-linear-to-r from-primary via-primary/80 to-transparent"
           ></div>
@@ -308,6 +367,7 @@
             </div>
             <div class="relative reveal">
               <img
+                loading="lazy"
                 alt="Modern driving school building"
                 class="rounded-xl shadow-lg w-full h-auto object-cover"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311726/article_a2cuhw.jpg"
@@ -345,6 +405,7 @@
             class="bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant hover:shadow-md transition-shadow flex flex-col"
           >
             <img
+              loading="lazy"
               alt="Chetak Ghoda Branch"
               class="h-70 w-full object-cover"
               src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311726/chetakGhodaBranch_win5jb.webp"
@@ -388,6 +449,7 @@
             class="bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant hover:shadow-md transition-shadow flex flex-col"
           >
             <img
+              loading="lazy"
               alt="N-4 Cidco Branch"
               class="h-70 w-full object-cover"
               src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311743/n4_branch_wzlewt.webp"
@@ -566,6 +628,7 @@
                   class="bg-surface rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-md transition-shadow"
                 >
                   <img
+                    loading="lazy"
                     alt="Maruti Suzuki Fronx"
                     class="w-full h-48 object-cover"
                     src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778312111/fronx1_hrblx8.png"
@@ -591,6 +654,7 @@
                   class="bg-surface rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-md transition-shadow"
                 >
                   <img
+                    loading="lazy"
                     alt="Hyundai Creta"
                     class="w-full h-48 object-cover"
                     src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778312110/hyundaiCreta_ulmo3u.webp"
@@ -616,6 +680,7 @@
                   class="bg-surface rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-md transition-shadow"
                 >
                   <img
+                    loading="lazy"
                     alt="Tata Nexon"
                     class="w-full h-48 object-cover"
                     src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778312111/Tata_nexon_vuyatd.png"
@@ -641,6 +706,7 @@
                   class="bg-surface rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-md transition-shadow"
                 >
                   <img
+                    loading="lazy"
                     alt="Honda Aura"
                     class="w-full h-48 object-cover"
                     src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778312110/aura1_rwsyol.png"
@@ -666,6 +732,7 @@
                   class="bg-surface rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-md transition-shadow"
                 >
                   <img
+                    loading="lazy"
                     alt="Hyundai Venue"
                     class="w-full h-48 object-cover"
                     src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778312111/venue_qwzaks.webp"
@@ -694,6 +761,7 @@
                   class="bg-surface rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-md transition-shadow"
                 >
                   <img
+                    loading="lazy"
                     alt="Kia Seltos"
                     class="w-full h-48 object-contain"
                     src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778312112/KIA_shdcwq.png"
@@ -719,6 +787,7 @@
                   class="bg-surface rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-md transition-shadow"
                 >
                   <img
+                    loading="lazy"
                     alt="Bajaj Auto RE"
                     class="w-full h-48 object-contain"
                     src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778312110/auto_ndtg7v.png"
@@ -766,6 +835,7 @@
                   class="absolute inset-0 bg-secondary rounded-lg -rotate-6 group-hover:rotate-0 transition-transform duration-300"
                 ></div>
                 <img
+                  loading="lazy"
                   alt="Prakash Nagre"
                   class="relative w-60 object-cover rounded-lg border-4 border-white shadow-md"
                   src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311732/Founder2_mbp06j.jpg"
@@ -803,8 +873,9 @@
               class="bg-surface-container-lowest rounded-md p-md text-center shadow-sm hover:shadow-md transition-shadow"
             >
               <img
+                loading="lazy"
                 alt="Samadhan Pakhare"
-                class="w-40 rounded-md mx-auto mb-md object-cover grayscale hover:grayscale-0 transition-all"
+                class="w-40 rounded-md mx-auto mb-md object-cover md:grayscale md:hover:grayscale-0 transition-all"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311751/Samadhan_1_o7y3ej.jpg"
               />
               <h4 class="font-h3 text-primary text-[20px]">Samadhan Pakhare</h4>
@@ -820,8 +891,9 @@
               class="bg-surface-container-lowest rounded-md p-md text-center shadow-sm hover:shadow-md transition-shadow"
             >
               <img
+                loading="lazy"
                 alt="Jane Doe"
-                class="w-40 rounded-md mx-auto mb-md object-cover grayscale hover:grayscale-0 transition-all"
+                class="w-40 rounded-md mx-auto mb-md object-cover md:grayscale md:hover:grayscale-0 transition-all"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311733/vikas1_1_moc13l.jpg"
               />
               <h4 class="font-h3 text-primary text-[20px]">Vikas Doe</h4>
@@ -837,8 +909,9 @@
               class="bg-surface-container-lowest rounded-md p-md text-center shadow-sm hover:shadow-md transition-shadow"
             >
               <img
+                loading="lazy"
                 alt="Gajanan Kakad"
-                class="w-40 rounded-md mx-auto mb-md object-cover grayscale hover:grayscale-0 transition-all"
+                class="w-40 rounded-md mx-auto mb-md object-cover md:grayscale md:hover:grayscale-0 transition-all"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311744/Gajanan.jpg_1_id9ayf.jpg"
               />
               <h4 class="font-h3 text-primary text-[20px]">Gajanan Kakad</h4>
@@ -854,8 +927,9 @@
               class="bg-surface-container-lowest rounded-md p-md text-center shadow-sm hover:shadow-md transition-shadow"
             >
               <img
+                loading="lazy"
                 alt="Dayasagar Borde"
-                class="w-40 rounded-md mx-auto mb-md object-cover grayscale hover:grayscale-0 transition-all"
+                class="w-40 rounded-md mx-auto mb-md object-cover md:grayscale md:hover:grayscale-0 transition-all"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311741/Dayasagar_1_svjgro.jpg"
               />
               <h4 class="font-h3 text-primary text-[20px]">Dayasagar Borde</h4>
@@ -890,6 +964,7 @@
               class="group relative overflow-hidden rounded-xl shadow-lg aspect-4/3 cursor-pointer"
             >
               <img
+                loading="lazy"
                 alt="Advanced Simulators"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311746/simulator-session_qk6xj4.webp"
@@ -907,6 +982,7 @@
               class="group relative overflow-hidden rounded-xl shadow-lg aspect-4/3 cursor-pointer"
             >
               <img
+                loading="lazy"
                 alt="On-Road Training"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311745/road-session_1_wkbb2o.jpg"
@@ -924,6 +1000,7 @@
               class="group relative overflow-hidden rounded-xl shadow-lg aspect-4/3 cursor-pointer"
             >
               <img
+                loading="lazy"
                 alt="Maintainence-session"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311740/maintainence-session_sb2nca.jpg"
@@ -941,6 +1018,7 @@
               class="group relative overflow-hidden rounded-xl shadow-lg aspect-4/3 cursor-pointer"
             >
               <img
+                loading="lazy"
                 alt="Awards"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311726/awards_bv6wtg.jpg"
@@ -956,6 +1034,7 @@
               class="group relative overflow-hidden rounded-xl shadow-lg aspect-4/3 cursor-pointer"
             >
               <img
+                loading="lazy"
                 alt="Marathwada’s Leading"
                 class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311743/marathwada_qczang.jpg"
@@ -973,6 +1052,7 @@
               class="group relative overflow-hidden rounded-xl shadow-lg aspect-4/3 cursor-pointer"
             >
               <img
+                loading="lazy"
                 alt="Traffic Rules"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311745/rules_xlwn66.webp"
@@ -1139,9 +1219,10 @@
         <div>
           <div class="flex items-center gap-sm mb-md">
             <img
+              loading="lazy"
               alt="Logo"
               class="w-[100px]"
-              src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311738/Logo_iwvyze.png"
+              src="./Icons/Logo.png"
             />
             <div
               class="font-h3 text-h3 font-bold text-on-primary dark:text-on-primary-container leading-none"
@@ -1232,6 +1313,7 @@
             </button>
           </div> -->
           <img
+            loading="lazy"
             src="https://res.cloudinary.com/dybeyyiam/image/upload/f_auto,q_auto/v1778311727/card_xxxxcf.jpg"
             alt=""
             class="w-full"
@@ -1247,8 +1329,8 @@
     <!-- Footer Section End -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./scripts/slider.js"></script>
-    <script src="./scripts/script.js"></script>
+    <script defer src="./scripts/slider.js"></script>
+    <script defer src="./scripts/script.js"></script>
     <div id="google_translate_element" style="display: none"></div>
 
     <script>
@@ -1289,6 +1371,9 @@
       }
     </script>
 
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script
+      defer
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </body>
 </html>
