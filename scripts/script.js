@@ -1,18 +1,32 @@
-// Scroll Reveal Logic
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    }
-  }
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", reveal);
-// Initial check for hero
-window.addEventListener("DOMContentLoaded", reveal);
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        // When element enters viewport
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
 
-// Gallery page code below
+          // Stop observing after animation triggers
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15, // Trigger when 15% visible
+    },
+  );
+
+  reveals.forEach((el) => observer.observe(el));
+});
+
+const btn = document.getElementById("whatsappBtn");
+
+setInterval(() => {
+  btn.classList.add("animate-ping");
+
+  setTimeout(() => {
+    btn.classList.remove("animate-ping");
+  }, 500);
+}, 500);

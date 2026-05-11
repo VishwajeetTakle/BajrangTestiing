@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bajrangmotordrivingschool.com/sitemap.xml
